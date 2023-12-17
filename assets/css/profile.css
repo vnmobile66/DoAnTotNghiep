@@ -1,0 +1,234 @@
+.profile-container{
+    width: 100%;
+}
+button#view-detail{
+    padding: 10px 20px;
+    background: cadetblue;
+    color: #fff;
+    border-radius: 5px;
+}
+.profile-background{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-image: url(../images/396174970_204970185881220_5204196827344024207_n.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.profile-avatar{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    justify-content: center;
+    right: 0;
+    display: flex;
+}
+.profile-avatar-container{
+    position: relative;
+}
+.avatar-box{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #ccc;
+    background-image: url(../images/user-icons.jpg);
+    background-size: cover;
+}
+.edit-avatar,
+.edit-avatar-cancel,
+.edit-avatar-confirm{
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 0 8px #ccc;
+    bottom: 0;
+    background: var(--bg-red);
+    padding: 12px;
+    color: #fff;
+    border-radius: 50%;
+}
+#confirm-btn{
+    position: absolute;
+    opacity: 0;
+}
+.edit-avatar-confirm{
+    background: cadetblue;
+}
+.edit-avatar-cancel{
+    left: 18px;
+}
+.edit-avatar,
+.edit-avatar-confirm{
+    right: 18px;
+}
+.edit-avatar label{
+    cursor: pointer;
+}
+input[type="file"]{
+    display: none;
+}
+.profile-detail{
+    margin-top: 112px;
+}
+#name{
+    text-align: center;
+    font-size: 42px;
+}
+.detail{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    width: 100%;
+    padding: 20px 50px;
+}
+.information{
+    width: 100%;
+}
+table#information-tbl tr:nth-child(even),
+table#order-manager-tbl tr:nth-child(even){
+    background-color: unset;
+}
+table#information-tbl{
+    text-align: left;
+}
+table#order-manager-tbl{
+    text-align: center;
+}
+table#information-tbl,
+table#order-manager-tbl{
+    width: 100%;
+    border-collapse: collapse;
+}
+table#information-tbl tr th,
+table#information-tbl tr td,
+table#order-manager-tbl tr th,
+table#order-manager-tbl tr td{
+    padding: 14px 8px;
+    border: 1px solid #ccc;
+}
+.order-manager{
+    width: 100%;
+    margin-left: 50px;
+    overflow-y: auto;
+}
+.title{
+    padding: 12px 0px;
+}
+.profile-control{
+    margin-top: 12px;
+}
+.profile-control-btn{
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+#edit-pass{
+    background: var(--bg-red);
+}
+#update-information{
+    background: #fff;
+    border: 1px solid var(--bg-red);
+    color: var(--bg-red);
+}
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.form-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+.modal-content form{
+    position: relative;
+    padding: 12px 12px 0px 12px;
+    background: #fff;
+}
+.form-control{
+    position: relative;
+    margin: 8px 0px;
+    padding: 4px;
+}
+.form-control input{
+    padding: 4px 21px 4px 4px;
+    float: right;
+}
+.modal-content form input[type="submit"]{
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0px;
+    background: cornflowerblue;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+.show-pass{
+    position: absolute;
+    padding: 4px 0px;
+    top: 32%;
+    right: 8px;
+    cursor: pointer;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 12px;
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Mobile */
+@media screen and (max-width: 599px) {
+    main#profile{
+        margin-top: 150px;
+    }
+    #name{
+        font-size: 36px;
+    }
+    .detail{
+        display: block;
+        padding: 12px 8px;
+    }
+    .order-manager{
+        margin: 0;
+    }
+    .modal-content form{
+        width: 100%;
+        padding: 0;
+    }
+    .form-title{
+        padding: 8px 0px;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    .detail{
+        display: block;
+    }
+    .order-manager{
+        margin: 0;
+    }
+}

@@ -1,0 +1,29 @@
+main{
+    margin-top: 12px;
+}
+.m-category-title{
+    margin: 0px 0px 12px 12px;
+}
+.m-category{
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 14px;
+}
+.m-category-items{
+    text-align: center;
+}
+.m-category-img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.m-category-items a span{
+    display: block;
+    padding: 12px;
+    margin: 0;
+    padding: 0;
+}

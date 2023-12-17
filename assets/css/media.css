@@ -1,0 +1,214 @@
+@media screen and (max-width: 599px) {
+    *>span{
+        margin-left: 0;
+    }
+    a.content-show-all span{
+        display: unset;
+        padding: 0;
+    }
+    .banner,
+    header .contact_us,
+    .logo-menu,
+    #list,
+    #accountBtn,
+    .cart,
+    .slideshow-content,
+    footer,
+    .pc-show{
+        display: none;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+    .mobile_contact_us{
+        justify-content: space-around;
+        display: flex;
+        padding: 0;
+    }
+    .mobile_contact_us address, .mobile_contact_us div{
+        color: var(--text-white);
+        margin: 0;
+    }
+    .mobile_contact_us a{
+        display: none;
+    }
+    
+    .mobile_contact_us address, .mobile_contact_us div span, .mobile_contact_us a span{
+        font-size: 9px;
+    }
+    main{
+        margin-top: 169px;
+        margin-bottom: 80px;
+    }
+    .navbar-content{
+        display: block;
+        padding: 0;
+        height: 112px;
+    }
+    #navbar .navbar-content a.logo{
+        display: block;
+        padding: 10px 0px;
+        margin: 0 auto;
+        height: auto;
+    }
+    #navbar .navbar-content .search-box{
+        width: 100%;
+        margin: 0px 12px;
+        margin: 0 auto;
+    }
+    .search-box input{
+        padding: 8px 60px;
+    }
+    .slideshow-container{
+        width: 100%;
+        margin: unset;
+        height: 200px;
+    }
+    .slides{
+        height: 236px;
+    }
+    .navigation-auto,
+    .navigation-manual{
+        width: 100%;
+    }
+    .deal{
+        width: 100%;
+        margin: unset;
+    }
+    .deal-title{
+        height: 35px;
+    }
+    .deal-title-date{
+        top: 2px;
+        left: 4px;
+    }
+    .deal-title-date h3,
+    .deal-title-date h3 span,
+    .countdown{
+        font-size: 12px;
+    }
+    .deal-title-date h3 span{
+        margin-left: 4px;
+    }
+    .carousel{
+        padding: 0px 12px;
+    }
+    .owl-dots{
+        margin-top: unset;
+    }
+    .card a{
+        height: 152px;
+    }
+    .content-items{
+        width: 100%;
+    }
+    .laptop,
+    .smartphone,
+    .camera,
+    .news{
+        margin: 0px 0px 50px 0px;
+    }
+    .advertisement{
+        display: block;
+        height: auto;
+    }
+    .advertisement-item{
+        width: 100%;
+        height: 72px;
+        overflow: hidden;
+        margin: 8px 0px;
+    }
+    #myBtn{
+        bottom: 100px;
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+    }
+    .mobile-controller{
+        display: grid;
+        background: #fff;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: repeat(4,auto);
+        width: 100%;
+        height: auto;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0 5px #ccc;
+        z-index: 99;
+        justify-content: unset;
+    }
+    .mobile-controller a{
+        padding: 12px 0px;
+        text-align: center !important;
+    }
+    .mobile-controller a i{
+        font-size: 21px;
+    }
+    .mb-active{
+        color: #fff;
+        background: var(--bg-red); 
+    }
+}
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    header .contact_us{
+        display: none;
+    }
+    .advertisement{
+        display: none;
+    }
+    .deal{
+        margin-bottom: 50px;
+    }
+    .navbar-content{
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    #navbar .navbar-content .search-box{
+        width: 100%;
+    }
+    #navbar .navbar-content a{
+        padding: 12px;
+    }
+    .navbar-content span{
+        display: none;
+    }
+    .show-menu span{
+        display: inline;
+    }
+    .slideshow-container{
+        width: 100%;
+    }
+    .slides{
+        height: 400px;
+    }
+    .navigation-auto,
+    .navigation-manual{
+        width: 100%;
+    }
+    .slideshow-content{
+        display: none;
+    }
+    ul.sub-menu{
+        width: 300px;
+    }
+    .content-items{
+        width: 100%;
+    }
+    .deal-title{
+        height: 60px;
+    }
+}
+/* Laptop */
+@media screen and (min-width: 1025px){
+    #mobile-category{
+        display: none;
+    }
+}
